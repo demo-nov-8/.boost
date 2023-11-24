@@ -11,7 +11,7 @@ on:
         required: true
 
 jobs:
-  boost-scanners:
+  boost-scanner:
     if: github.event.inputs.job_name == ''
     name: ${{fromJSON(github.event.inputs.scan_params).scanner_name}}
     runs-on: ubuntu-latest
